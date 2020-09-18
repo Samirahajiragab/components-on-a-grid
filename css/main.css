@@ -20,11 +20,32 @@ header {
   display: contents;
 }
 
- body {
-   display: grid;
- }
-
-.banner {
+body {
+  background-color: #f2f1ed;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 12rem 5.2rem 10rem;
+}
+
+.pano {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+h1 {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  z-index: 1;
+  width: 10rem;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 1;
 }
