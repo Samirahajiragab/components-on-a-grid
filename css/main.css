@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", Georgia;
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -24,7 +23,7 @@ body {
   background-color: #f2f1ed;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 12rem 5.2rem 10rem;
+  grid-gap: 1rem;
 }
 
 .pano {
@@ -33,20 +32,54 @@ body {
 }
 
 h1 {
-  grid-column: 1 / -1;
-  grid-row: 2;
+  font-family: "Patua One", Georgia;
+  margin-bottom: 0;
+  margin-top: 11rem;
+  grid-column: 1;
+  grid-row: 1;
   z-index: 1;
-  width: 10rem;
+  width: 14rem;
 }
+
 ul {
+  margin-right: 1rem;
   list-style: none;
   display: flex;
   justify-content: space-between;
+  color: #fff;
 }
 
 a {
   color: #fff;
+}
+
+nav {
   grid-column: 2;
   grid-row: 1;
   z-index: 1;
+}
+
+main {
+  display: contents;
+}
+
+h2 {
+  font-family: "Patua One", Georgia;
+  color: #30658d;
+  font-size: .7rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+  font-size: .55rem;
+}
+
+main > figure:last-child {
+  grid-column: 2;
+}
+
+figure {
+  margin: 0;
 }
